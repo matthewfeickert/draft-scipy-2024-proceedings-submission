@@ -67,6 +67,16 @@ pixi shell -e dev
 
 and then continue as described above.
 
+#### PDF export
+
+To build a PDF render of the paper using a local install of LaTeX run
+
+```console
+pixi run export-pdf
+```
+
+which will create LaTeX files and build `paper/exports/scipy_proceedings_draft.pdf`.
+
 ### Writing collectively
 
 For this document, the authors will write collectively via pull requests.

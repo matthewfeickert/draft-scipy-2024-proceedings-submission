@@ -14,7 +14,11 @@ myst start
 
 export = """
 cd paper && \
-myst build --html && \
+myst build --html
+"""
+
+export-pdf = """
+cd paper && \
 myst build --pdf
 """
 
