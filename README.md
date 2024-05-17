@@ -66,3 +66,9 @@ pixi shell -e dev
 ```
 
 and then continue as described above.
+
+### Writing collectively
+
+For this document, the authors will write collectively via pull requests.
+This will require some degree of coordination, so please communicate freely with each other on the IRIS-HEP Slack.
+To avoid creating noisy diffs **do not** merge any PR that does not pass pre-commit.ci.
