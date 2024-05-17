@@ -30,7 +30,7 @@ To submit to SciPy, Matthew Feickert will open a PR to the [SciPy proceedings](h
 - Authors may include a project or consortium (e.g. [The Jupyter Project](https://raw.githubusercontent.com/scipy-conference/scipy_proceedings/2018/papers/project_jupyter/paper.rst))
 - There must be at least one corresponding author, and this must be a specific person with a valid email address
 - Authors of papers from previous SciPys may change their name on their published work by contacting the Proceedings Co-chairs
-- All citations that have DOIs should include those DOIs in the paper's references section, see [`mybib.bib`](./papers/00_myst_template/mybib.bib).
+- All citations that have DOIs should include those DOIs in the paper's references section, see [`mybib.bib`](https://github.com/scipy-conference/scipy_proceedings/blob/2024/papers/00_myst_template/mybib.bib).
 - All figures and tables should have captions.
 - Figures and tables should be positioned close to their explanatory text.
 - All abbreviations should be identified in your `myst.yml` ([docs](https://mystmd.org/guide/glossaries-and-terms#abbreviations))
