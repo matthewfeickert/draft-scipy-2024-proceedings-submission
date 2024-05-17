@@ -2,4 +2,5 @@
 .pixi
 *.egg-info
 
-_build
+_build/
+exports/

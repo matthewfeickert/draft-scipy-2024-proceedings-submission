@@ -17,6 +17,11 @@ cd paper && \
 myst build --html
 """
 
+export-pdf = """
+cd paper && \
+myst build --pdf
+"""
+
 [dependencies]
 mystmd = "==1.2.3"
 nodejs = "==20.12.2"
