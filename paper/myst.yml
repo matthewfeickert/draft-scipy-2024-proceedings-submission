@@ -28,9 +28,9 @@ project:
       affiliations:
         - University of Washington
   keywords:
-    - terraforming
-    - desert
-    - numerical perspective
+    - ATLAS
+    - particle physics
+    - Scikit-HEP
   # Add the abbreviations that you use in your paper here
   abbreviations:
     MyST: Markedly Structured Text
