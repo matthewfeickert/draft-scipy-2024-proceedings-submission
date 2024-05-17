@@ -20,3 +20,9 @@ myst build --html
 [dependencies]
 mystmd = "==1.2.3"
 nodejs = "==20.12.2"
+
+[feature.dev.dependencies]
+pre-commit = "==3.7.1"
+
+[environments]
+dev = ["dev"]
