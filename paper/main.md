@@ -192,12 +192,12 @@ pulvinar id metus.
 [^footnote-1]: On the one hand, a footnote.
 [^footnote-2]: On the other hand, another footnote.
 
-:::{figure} figure1.png
+:::{figure} figures/figure1.png
 :label: fig:stream
 This is the caption, sandworm vorticity based on storm location in a pleasing stream plot. Based on example in [matplotlib](https://matplotlib.org/stable/plot_types/arrays/streamplot.html).
 :::
 
-:::{figure} figure2.png
+:::{figure} figures/figure2.png
 :label: fig:em
 This is the caption, electromagnetic signature of the sandworm based on remote sensing techniques. Based on example in [matplotlib](https://matplotlib.org/stable/plot_types/stats/hist2d.html).
 :::
