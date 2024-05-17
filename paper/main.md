@@ -20,10 +20,10 @@ follow the link for a live preview, any changes to this file will be
 reflected immediately.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sapien
-tortor, bibendum et pretium molestie, dapibus ac ante. Nam odio orci, interdum
+tortor, bibendum et pretium molestie, dapibus ac ante. Name odio orci, interdum
 sit amet placerat non, molestie sed dui. Pellentesque eu quam ac mauris
 tristique sodales. Fusce sodales laoreet nulla, id pellentesque risus convallis
-eget. Nam id ante gravida justo eleifend semper vel ut nisi. Phasellus
+eget. Name id ante gravida justo eleifend semper vel ut nisi. Phasellus
 adipiscing risus quis dui facilisis fermentum. Duis quis sodales neque. Aliquam
 ut tellus dolor. Etiam ac elit nec risus lobortis tempus id nec erat. Morbi eu
 purus enim. Integer et velit vitae arcu interdum aliquet at eget purus. Integer
@@ -177,7 +177,7 @@ See complete documentation on [cross-references](https://mystmd.org/guide/cross-
 
 Mauris purus enim, volutpat non dapibus et, gravida sit amet sapien. In at
 consectetur lacus. Praesent orci nulla, blandit eu egestas nec, facilisis vel
-lacus. Fusce non ante vitae justo faucibus facilisis. Nam venenatis lacinia
+lacus. Fusce non ante vitae justo faucibus facilisis. Name venenatis lacinia
 turpis. Donec eu ultrices mauris. Ut pulvinar viverra rhoncus. Vivamus
 adipiscing faucibus ligula, in porta orci vehicula in. Suspendisse quis augue
 arcu, sit amet accumsan diam. Vestibulum lacinia luctus dui. Aliquam odio arcu,
