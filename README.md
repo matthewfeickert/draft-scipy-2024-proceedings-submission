@@ -1,6 +1,11 @@
 # draft-scipy-2024-proceedings-submission
 Draft version of SciPy 2024 proceedings submission
 
+
+To submit to SciPy, Matthew Feickert will open a PR to the [SciPy proceedings](https://github.com/scipy-conference/scipy_proceedings/tree/2024) with the contents of the `paper/` directory of this repository.
+
+* Word limit: 6000 words
+
 ## Timeline
 
 | Date | Event | Passed (✅/❌) |
@@ -11,6 +16,31 @@ Draft version of SciPy 2024 proceedings submission
 | July 26  | Final review deadline                     |  |
 | July 31  | Final author revision deadline            |  |
 | August 9 | Final reviewer decision deadline          |  |
+
+## [General Information and Guidelines for Authors](https://github.com/scipy-conference/scipy_proceedings/tree/2024?tab=readme-ov-file#general-information-and-guidelines-for-authors)
+
+- The paper is written and reviewed using the interactive HTML view (i.e. `myst start`), the PDF is built upon acceptance only
+- Example papers are provided in `papers/00_myst_template`
+  - These papers provide examples of how to:
+    - Label figures, equations and tables
+    - Use math markup
+    - Include code snippets
+    - Use a BibTeX files and/or DOIs for citations
+- When creating your pull-request, add a pull-request label of `paper` to trigger the build process. If you do not add this, a proceedings chair member will add it for you.
+- Authors may include a project or consortium (e.g. [The Jupyter Project](https://raw.githubusercontent.com/scipy-conference/scipy_proceedings/2018/papers/project_jupyter/paper.rst))
+- There must be at least one corresponding author, and this must be a specific person with a valid email address
+- Authors of papers from previous SciPys may change their name on their published work by contacting the Proceedings Co-chairs
+- All citations that have DOIs should include those DOIs in the paper's references section, see [`mybib.bib`](./papers/00_myst_template/mybib.bib).
+- All figures and tables should have captions.
+- Figures and tables should be positioned close to their explanatory text.
+- All abbreviations should be identified in your `myst.yml` ([docs](https://mystmd.org/guide/glossaries-and-terms#abbreviations))
+- License conditions on images and figures must be respected (Creative Commons,
+  etc.)
+- Images and figures should be reasonably sized and formatted for viewing online; typically less than 1 MB
+- Do not modify any files outside of your paper directory
+- The compiled version of the paper should be at most 6000 words
+
+including figures but not including references; this is about 8 pages for the published PDF that will be created upon acceptance.
 
 ## Development instructions
 
