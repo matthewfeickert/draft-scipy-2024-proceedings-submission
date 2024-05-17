@@ -14,7 +14,8 @@ myst start
 
 export = """
 cd paper && \
-myst build --html
+myst build --html && \
+myst build --pdf
 """
 
 [dependencies]
