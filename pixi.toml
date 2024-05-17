@@ -1,0 +1,17 @@
+[project]
+name = "understanding_the_universe"
+version = "0.1.0"
+description = "Add a short description here"
+authors = ["Matthew Feickert <matthew.feickert@cern.ch>"]
+channels = ["conda-forge"]
+platforms = ["linux-64", "osx-64", "osx-arm64", "win-64"]
+
+[tasks]
+build = """
+cd paper && \
+myst start
+"""
+
+[dependencies]
+mystmd = "==1.2.3"
+nodejs = "==20.12.2"
