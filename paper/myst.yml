@@ -52,5 +52,11 @@ project:
   license: CC-BY-4.0
   venue: Scipy 2024
   date: 2024-07-10
+  # Exclude source files to keep them from appearing as supporting documents
+  exclude:
+    - introduction.md
+    - scientific-python-ecosystem.md
+    - uncovering-higgs.md
+    - conclusions.md
 site:
   template: article-theme
