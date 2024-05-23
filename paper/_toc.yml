@@ -15,7 +15,7 @@
 # This spec is based on the JupyterBook table of contents.
 # Learn more at https://jupyterbook.org/customize/toc.html
 
-format: jb-book
+format: jb-article
 root: main
-chapters:
+sections:
   - file: introduction.md
