@@ -55,5 +55,6 @@ project:
   # Exclude source files to keep them from appearing as supporting documents
   exclude:
     - introduction.md
+    - scientific-python-ecosystem.md
 site:
   template: article-theme
