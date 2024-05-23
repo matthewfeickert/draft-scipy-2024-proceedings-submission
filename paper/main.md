@@ -55,7 +55,7 @@ Furthermore, library developers will have the chance to see how their products a
 
 ## Introduction
 
-_Here we can talk about the ATLAS experiment, the detector, its purpose, the amount of data collected, etc._
+How can the contents of `paper/introduction.md` get inserted here in a similar manner to an include directive in LaTeX?
 
 ### Employing the Scientific Python ecosystem
 
