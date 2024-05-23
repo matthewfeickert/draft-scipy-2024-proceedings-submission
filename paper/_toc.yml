@@ -18,4 +18,4 @@
 format: jb-article
 root: main
 sections:
-  - file: introduction.md
+- file: introduction.md

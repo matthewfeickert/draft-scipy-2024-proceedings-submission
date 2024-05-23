@@ -57,6 +57,8 @@ Furthermore, library developers will have the chance to see how their products a
 
 How can the contents of `paper/introduction.md` get inserted here in a similar manner to an include directive in LaTeX?
 
+It is unclear how to get myst to build multiple files into a single view like shown in jupyterbook: https://jupyterbook.org/en/stable/structure/toc.html#build-an-article-from-multiple-files as there is no `--builder` option for `myst start` or `myst build`.
+
 ### Employing the Scientific Python ecosystem
 
 _Here we can talk about how we used to do the event-loop analysis but we're shifting towards array programming models à la `numpy`. We can describe our highly structured but jagged data and how domain specific languages, such and `awkward` (as a generalization of `numpy`) helps us deal with those peculiarities. Maybe here we can also advertise the [Scikit-HEP](https://scikit-hep.org/) ecosystem._
