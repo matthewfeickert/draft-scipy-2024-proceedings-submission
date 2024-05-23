@@ -56,5 +56,7 @@ project:
   exclude:
     - introduction.md
     - scientific-python-ecosystem.md
+    - uncovering-higgs.md
+    - conclusions.md
 site:
   template: article-theme
