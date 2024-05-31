@@ -12,8 +12,7 @@ These data are then further filtered through selection criteria on the topology 
 The final datasets that physicists use in their physics analyses in ATLAS is still on the order of hundreds of terabytes, which poses challenges of compute scale and analyst time to efficiently use while maximizing physics value.
 
 Traditionally, the ATLAS and the other LHC experiment have created experiment-specific custom `C++` frameworks to handle all stages of the data processing pipeline, from the initial construction of high-level physics objects from the raw data to the final statistical analyses.
-
- studies subatomic particles to seek answers to the most fundamental questions of the Universe.
-Due to the rarity of interesting subatomic phenomena, vast amounts of data are collected by the experiment.
-Those data are further reduced but physicists still have to analyze hundreds of terabytes for their studies.
-This has been traditionally conducted using experiment-specific custom C++ frameworks.
+Motivated by the broad success of the Scientific Python ecosystem across many domains of science, and the rise of the Scikit-HEP ecosystem of Pythonic tooling for particle physics [@Rodrigues:2020syo] and community tools produced by the Institute for Research and Innovation in Software for High Energy Physics (IRIS-HEP) [@S2I2HEPSP], [@CWPDOC], there has been a broad community-driven shift in HEP towards use of the Scientific Python ecosystem for analysis of physics data.
+The use of dataframes and array programming for data analysis has enhanced the user experience while providing efficient computations without the need of coding optimized low-level routines.
+The ATLAS collaboration has further extended this ecosystem of tooling to include high-level custom Python bindings to the low level `C++` frameworks using `nanobind` [@nanobind].
+Collectively, these tools are modernizing the methods which researchers are engaging data analysis at large scale and providing a nobel end-to-end analysis ecosystem for the ATLAS collaboration.
