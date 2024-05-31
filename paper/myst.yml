@@ -33,6 +33,7 @@ project:
     - Scikit-HEP
   # Add the abbreviations that you use in your paper here
   abbreviations:
+    IRIS-HEP: Institute for Research and Innovation in Software for High Energy Physics
     HEP: High Energy Physics
     LHC: Large Hadron Collider
   # It is possible to explicitly ignore the `doi-exists` check for certain citation keys
