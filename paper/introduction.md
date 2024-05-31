@@ -7,7 +7,7 @@ To study the structure of the Universe on the smallest scales requires the highe
 These extreme energy density environments are created at the CERN international laboratory, in Geneva, Switzerland, using the Large Hadron Collider (LHC) to collide bunches of billions of protons at a center-of-mass energy of $\sqrt{s} = 13~\mathrm{TeV}$.
 The resulting collisions are recorded with building-sized particle detectors positioned around the LHC's $27~\mathrm{km}$ ring that are designed to measure particular quantities.
 Given the rarity of the subatomic phenomena of interest, the rate of the beam crossings is a tremendous $40~\mathrm{MHz}$ to maximize the number of high quality collisions that can be captured and read out by the detectors.
-Even with real-time onbaord processing ("triggering") of the experiment detector readout to save only the most interesting collisions, detectors like the [ATLAS experiment](https://atlas.cern/) still produce multiple petabytes of data per year.
+Even with real-time onbaord processing ("triggering") of the experiment detector readout to save only the most interesting collisions, detectors like the ATLAS experiment [@PERF-2007-01] still produce multiple petabytes of data per year.
 These data are then further filtered through selection criteria on the topology and kinematic quantities of the particle collision "events" recorded into specialized datasets for different kinds of physics analysis.
 The final datasets that physicists use in their physics analyses in ATLAS is still on the order of hundreds of terabytes, which poses challenges of compute scale and analyst time to efficiently use while maximizing physics value.
 
