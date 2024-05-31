@@ -1,3 +1,19 @@
 ## Introduction
 
-_Here we can talk about the ATLAS experiment, the detector, its purpose, the amount of data collected, etc._
+<!-- Here we can talk about the ATLAS experiment, the detector, its purpose, the amount of data collected, etc. -->
+
+The field of high energy physics (HEP) is devoted to the study of the fundamental forces of Nature and their interactions with matter.
+To study the structure of the Universe on the smallest scales requires the highest energy density environments possible &mdash; similar to those of the early Universe.
+These extreme energy density environments are created at the CERN international laboratory, in Geneva, Switzerland, using the Large Hadron Collider (LHC) to collide bunches of billions of protons at a center-of-mass energy of $\sqrt{s} = 13~\mathrm{TeV}$.
+The resulting collisions are recorded with building-sized particle detectors positioned around the LHC's $27~\mathrm{km}$ ring that are designed to measure particular quantities.
+Given the rarity of the subatomic phenomena of interest, the rate of the beam crossings is a tremendous $40~\mathrm{MHz}$ to maximize the number of high quality collisions that can be captured and read out by the detectors.
+Even with real-time onbaord processing ("triggering") of the experiment detector readout to save only the most interesting collisions, detectors like the [ATLAS experiment](https://atlas.cern/) still produce multiple petabytes of data per year.
+These data are then further filtered through selection criteria on the topology and kinematic quantities of the particle collision "events" recorded into specialized datasets for different kinds of physics analysis.
+The final datasets that physicists use in their physics analyses in ATLAS is still on the order of hundreds of terabytes, which poses challenges of compute scale and analyst time to efficiently use while maximizing physics value.
+
+Traditionally, the ATLAS and the other LHC experiment have created experiment-specific custom `C++` frameworks to handle all stages of the data processing pipeline, from the initial construction of high-level physics objects from the raw data to the final statistical analyses.
+
+ studies subatomic particles to seek answers to the most fundamental questions of the Universe.
+Due to the rarity of interesting subatomic phenomena, vast amounts of data are collected by the experiment.
+Those data are further reduced but physicists still have to analyze hundreds of terabytes for their studies.
+This has been traditionally conducted using experiment-specific custom C++ frameworks.
