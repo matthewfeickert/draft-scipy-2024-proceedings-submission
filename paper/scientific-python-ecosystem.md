@@ -17,4 +17,5 @@ Through intense detector characterization and calibration efforts, the ATLAS col
 Given the custom nature of the detector and correction implementations, these corrections are implemented in custom `C++` libraries in the ATLAS software framework, Athena [@ATL-SOFT-PUB-2021-001;@Athena_zenodo].
 To expose these `C++` libraries to the Pythonic tooling layer, custom Python bindings were written using `nanobind` for high efficiency.
 
-To
+To contend with the extreme data volume, efficient distributed computing is an essential requirement.
+Given the success of Dask [@Dask] in the Scientific Python ecosystem, and its ability to be deployed across both traditional batch systems and cloud based infrastructure with Kubernetes, the Scikit-HEP ecosystem has built extensions to Dask that allow for native Dask collections of Awkward arrays [@Dask-awkward] and computing multdimensional histogram objects [@Boost-histogram_zenodo] with Dask collections [@Dask-histogram].

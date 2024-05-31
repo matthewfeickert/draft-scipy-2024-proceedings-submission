@@ -98,6 +98,38 @@ title = {{Uproot}},
 year = {2017}
 }
 
+# Dask
+@manual{Dask,
+  title = {Dask: Library for dynamic task scheduling},
+  author = {{Dask Development Team}},
+  year = {2016},
+  url = {https://dask.pydata.org},
+}
+
+# dask-awkward
+@software{Dask-awkward,
+  author = "{dask-awkward Development Team}",
+  title = {{dask-awkward}},
+  year = {2022},
+  url = {https://github.com/dask-contrib/dask-awkward},
+}
+
+# boost-histogram
+@software{Boost-histogram_zenodo,
+author = {Schreiner, Henry and Dembinski, Hans  and Goel, Aman and Gohil, Jay and Liu, Shuo and Eschle, Jonas and Maji, Chanchal and Novak, Andrzej and Burr, Chris and Davis, Doug and Lieret, Kilian and Gizdov, Konstantin and Cranmer, Kyle and Feickert, Matthew and Grimaud Pierre},
+doi = {10.5281/zenodo.3492034},
+title = {{boost-histogram}},
+year = {2018}
+}
+
+# dask-histogram
+@software{Dask-histogram,
+  author = "{dask-histogram Development Team}",
+  title = {{dask-histogram}},
+  year = {2021},
+  url = {https://github.com/dask-contrib/dask-histogram},
+}
+
 # Columnar analysis with ATLAS data
 @article{Hartmann:2021qzp,
     author = {Hartmann, Nikolai and Elmsheuser, Johannes and Duckeck, G\"unter},
@@ -125,10 +157,10 @@ year = {2017}
 
 # Athena
 @software{Athena_zenodo,
-author = "{ATLAS Collaboration}",
-doi = {10.5281/zenodo.4772550},
-title = {{Athena}},
-year = {2021}
+  author = "{ATLAS Collaboration}",
+  doi = {10.5281/zenodo.4772550},
+  title = {{Athena}},
+  year = {2021}
 }
 
 # ATLAS software note
@@ -138,6 +170,20 @@ year = {2021}
     howpublished   = "{ATL-SOFT-PUB-2021-001}",
     url            = "https://cds.cern.ch/record/2767187",
     year           = "2021",
+}
+
+# NumPy
+@article{numpy,
+  author       = {Harris, Charles R. and Millman, K. Jarrod and van der Walt, Stéfan J. and Gommers, Ralf and Virtanen, Pauli and Cournapeau, David and Wieser, Eric and Taylor, Julian and Berg, Sebastian and Smith, Nathaniel J. and Kern, Robert and Picus, Matti and Hoyer, Stephan and van Kerkwijk, Marten H. and Brett, Matthew and Haldane, Allan and del Río, Jaime Fernández and Wiebe, Mark and Peterson, Pearu and Gérard-Marchant, Pierre and Sheppard, Kevin and Reddy, Tyler and Weckesser, Warren and Abbasi, Hameer and Gohlke, Christoph and Oliphant, Travis E.},
+  publisher    = {Springer Science and Business Media {LLC}},
+  doi          = {https://doi.org/10.1038/s41586-020-2649-2},
+  date         = {2020-09},
+  year         = {2020},
+  journal      = {Nature},
+  number       = {7825},
+  pages        = {357--362},
+  title        = {Array programming with {NumPy}},
+  volume       = {585},
 }
 
 # These references may be helpful:
@@ -166,19 +212,6 @@ year = {2021}
   pages        = {90--95},
   title        = {Matplotlib: A 2D graphics environment},
   volume       = {9},
-}
-
-@article{numpy,
-  author       = {Harris, Charles R. and Millman, K. Jarrod and van der Walt, Stéfan J. and Gommers, Ralf and Virtanen, Pauli and Cournapeau, David and Wieser, Eric and Taylor, Julian and Berg, Sebastian and Smith, Nathaniel J. and Kern, Robert and Picus, Matti and Hoyer, Stephan and van Kerkwijk, Marten H. and Brett, Matthew and Haldane, Allan and del Río, Jaime Fernández and Wiebe, Mark and Peterson, Pearu and Gérard-Marchant, Pierre and Sheppard, Kevin and Reddy, Tyler and Weckesser, Warren and Abbasi, Hameer and Gohlke, Christoph and Oliphant, Travis E.},
-  publisher    = {Springer Science and Business Media {LLC}},
-  doi          = {https://doi.org/10.1038/s41586-020-2649-2},
-  date         = {2020-09},
-  year         = {2020},
-  journal      = {Nature},
-  number       = {7825},
-  pages        = {357--362},
-  title        = {Array programming with {NumPy}},
-  volume       = {585},
 }
 
 @misc{pandas1,
@@ -223,21 +256,4 @@ year = {2021}
   pages   = {261--272},
   adsurl  = {https://rdcu.be/b08Wh},
 	doi     = {https://doi.org/10.1038/s41592-019-0686-2},
-}
-
-@article{sklearn1,
-  author       = {Pedregosa, F. and Varoquaux, G. and Gramfort, A. and Michel, V. and Thirion, B. and Grisel, O. and Blondel, M. and Prettenhofer, P. and Weiss, R. and Dubourg, V. and Vanderplas, J. and Passos, A. and Cournapeau, D. and Brucher, M. and Perrot, M. and Duchesnay, E.},
-  year         = {2011},
-  journal      = {Journal of Machine Learning Research},
-  pages        = {2825--2830},
-  title        = {Scikit-learn: Machine Learning in {P}ython},
-  volume       = {12},
-}
-
-@inproceedings{sklearn2,
-  author    = {Buitinck, Lars and Louppe, Gilles and Blondel, Mathieu and Pedregosa, Fabian and Mueller, Andreas and Grisel, Olivier and Niculae, Vlad and Prettenhofer, Peter and Gramfort, Alexandre and Grobler, Jaques and Layton, Robert and VanderPlas, Jake and Joly, Arnaud and Holt, Brian and Varoquaux, Gaël},
-  booktitle = {ECML PKDD Workshop: Languages for Data Mining and Machine Learning},
-  year      = {2013},
-  pages     = {108--122},
-  title     = {{API} design for machine learning software: experiences from the scikit-learn project},
 }
