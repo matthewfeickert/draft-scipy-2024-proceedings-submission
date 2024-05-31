@@ -60,5 +60,6 @@ project:
     - scientific-python-ecosystem.md
     - uncovering-higgs.md
     - conclusions.md
+    - acknowledgements.md
 site:
   template: article-theme

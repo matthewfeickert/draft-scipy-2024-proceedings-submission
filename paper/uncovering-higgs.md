@@ -34,7 +34,7 @@ This will look like three histograms as Matthias has showed in the [Zee_demo.ipy
 _This is a fancy term for calculating the 4-lepton invariant mass which will be used as a discriminant.
 We can briefly expand on the usage of ML techniques to calculate more convolved discriminants in complex realistic analyses._
 
-### The money plot
+### The "discovery" plot
 
 _Here we show the m(4l) distribution.
 We use `matplotlib`.

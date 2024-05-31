@@ -64,3 +64,6 @@ Furthermore, library developers will have the chance to see how their products a
 
 :::{include} conclusions.md
 :::
+
+:::{include} acknowledgements.md
+:::
