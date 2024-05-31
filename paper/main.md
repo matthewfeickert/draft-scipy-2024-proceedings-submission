@@ -12,15 +12,7 @@ exports:
     output: exports/scipy_proceedings_draft.pdf
 ---
 
-## Copy over from proposal edit this
-
-The talk will briefly introduce the big data science conducted at CERN along with the commensurate amount of data produced and waiting for analysis.
-The main objective of the talk will be to showcase how libraries from the Scientific Python ecosystem have been used to solve a common particle physics problem.
-This problem is the discrimination of a signal of interest in immersive noise. Successfully tackling such a problem, the physicists of the ATLAS collaboration discovered the Higgs boson in 2012.
-We will use as an example a simplified version of the data analysis workflow used for the Higgs boson discovery.
-This example is selected because it contains all the usual steps a particle physics data analyst has to undertake to discriminate such a signal; data cleaning and selection, feature engineering, visualization and basic statistical interpretation.
-
-### Notes
+## Notes
 
 * Example Jupyter notebook of simplified particle physics data analysis: [Zee_demo.ipynb](https://gitlab.cern.ch/gstark/pycolumnarprototype/-/blob/py_el_tool_test/Zee_demo.ipynb)
 * Last public talk on international conference by the speaker: [11th Edition of the Large Hadron Collider Physics Conference (22-26 May 2023): HL-LHC and Beyond Computing Challenges](https://indico.cern.ch/event/1198609/contributions/5370078/)
