@@ -1,5 +1,11 @@
 ## Employing the Scientific Python ecosystem
 
-_Here we can talk about how we used to do the event-loop analysis but we're shifting towards array programming models à la `numpy`.
-We can describe our highly structured but jagged data and how domain specific languages, such and `awkward` (as a generalization of `numpy`) helps us deal with those peculiarities.
-Maybe here we can also advertise the [Scikit-HEP](https://scikit-hep.org/) ecosystem._
+<!-- _Here we can talk about how we used to do the event-loop analysis but we're shifting towards array programming models à la `numpy`.
+We can describe our highly structured but jagged data and how domain specific languages, such as `awkward` (as a generalization of `numpy`) helps us deal with those peculiarities.
+Maybe here we can also advertise the [Scikit-HEP](https://scikit-hep.org/) ecosystem._ -->
+
+The multiple stages of physics data processing and analysis map onto different parts of the Scientific Python ecosystem.
+This begins with the highly-structured but jagged nature of the event data structures in HEP.
+The data structure of each event consists of variable length lists of physics object data structures (e.g. electrons, collections of tracks from charged objects).
+This has traditionally motivated the use of event loops that implicitly construct event level quantities of interest ("observables") and leveraged the `C++` compiler to produce efficient code, and made it difficult to take advantage of array programming paradigms that are common in Scientific Python given NumPy [@numpy] vector operations.
+The Scikit-HEP library Awkward Array [@Awkward_Array] provides a path forward by providing NumPy-like idioms for nested, variable-sized (JSON-like) data.
