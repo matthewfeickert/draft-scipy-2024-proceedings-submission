@@ -1,6 +1,6 @@
 ---
 # Ensure that this title is the same as the one in `myst.yml`
-title: How the Scientific Python ecosystem helps answering fundamental questions of the Universe
+title: How the Scientific Python ecosystem helps answer fundamental questions of the Universe
 abstract: |
   The ATLAS experiment at CERN explores vast amounts of physics data to answer the most fundamental questions of the Universe.
   The prevalence of Python in scientific computing motivated ATLAS to adopt it for its data analysis workflows while enhancing users' experience.
