@@ -1,9 +1,5 @@
 ## Employing the Scientific Python ecosystem
 
-<!-- _Here we can talk about how we used to do the event-loop analysis but we're shifting towards array programming models à la `numpy`.
-We can describe our highly structured but jagged data and how domain specific languages, such as `awkward` (as a generalization of `numpy`) helps us deal with those peculiarities.
-Maybe here we can also advertise the [Scikit-HEP](https://scikit-hep.org/) ecosystem._ -->
-
 The multiple stages of physics data processing and analysis map onto different parts of the Scientific Python ecosystem.
 This begins with the highly-structured but jagged nature of the event data structures in HEP.
 The data structure of each event consists of variable length lists of physics object data structures (e.g. electrons, collections of tracks from charged objects).
@@ -18,4 +14,9 @@ Given the custom nature of the detector and correction implementations, these co
 To expose these `C++` libraries to the Pythonic tooling layer, custom Python bindings were written using `nanobind` for high efficiency.
 
 To contend with the extreme data volume, efficient distributed computing is an essential requirement.
-Given the success of Dask [@Dask] in the Scientific Python ecosystem, and its ability to be deployed across both traditional batch systems and cloud based infrastructure with Kubernetes, the Scikit-HEP ecosystem has built extensions to Dask that allow for native Dask collections of Awkward arrays [@Dask-awkward] and computing multdimensional histogram objects [@Boost-histogram_zenodo] with Dask collections [@Dask-histogram].
+Given the success of Dask [@Dask] in the Scientific Python ecosystem, and its ability to be deployed across both traditional batch systems and cloud based infrastructure with Kubernetes, the Scikit-HEP ecosystem has built extensions to Dask that allow for native Dask collections of Awkward arrays [@Dask-awkward] and computing multdimensional `boost-histogram` objects [@Boost-histogram_zenodo] with Dask collections [@Dask-histogram].
+Using Dask and these extensions, the data selection and systematic correction workflow is able to be horizontally scaled out across ATLAS collaboration compute resources to provide the data throughput necessary to make analysis feasible.
+
+The resulting data objects that are returned to analysts are mutltidimenstional histograms of physics quantity distributions &mdash; such as the reconstructed invariant-mass of a collection of particles or particle momentum.
+Using the `hist` library [@hist_zenodo] for higher level data exploration and manipulation, physicists are then able to efficiently further manipulate the data distributions using tooling from the broader Scientific Python ecosystem and create domain-centric visualizations using the `mplhep` [@mplhep_zenodo] extension of Matplotlib [@matplotlib].
+From these high level data representations of the relevant physics, physicists are then able to serialize the distributions and use them for the final stages of data analysis and statistical modeling and inference.
