@@ -14,19 +14,6 @@ exports:
 
 ## Copy over from proposal edit this
 
-The [ATLAS experiment at CERN](https://atlas.cern/), in Geneva, Switzerland, studies subatomic particles to seek answers to the most fundamental questions of the Universe.
-Due to the rarity of interesting subatomic phenomena, vast amounts of data are collected by the experiment.
-Those data are further reduced but physicists still have to analyze hundreds of terabytes for their studies.
-This has been traditionally conducted using experiment-specific custom C++ frameworks.
-
-In recent years, there has been a broad community-driven shift towards the Scientific Python ecosystem inside of particle physics.
-The use of dataframes and NumPy-like idioms for data analysis has enhanced the user experience while providing efficient computations without the need of coding optimized low-level routines.
-This trend is followed by the education system too, as students learn python as the primary programming language.
-Therefore, the ATLAS collaboration committed to extend and improve its data analysis paradigm by leveraging the Scientific Python ecosystem and its benefits.
-Open-source libraries have been used to build domain-specific data analytics and visualization workflows.
-Those libraries belong either to the general Scientific Python ecosystem or to the particle physics-specific [Scikit-HEP](https://scikit-hep.org/) ecosystem.
-Furthermore, next generation C++/Python binding tools have been used to expose pieces of the legacy C++ code, which encapsulates decades of domain-specific development, to the Python environment.
-
 The talk will briefly introduce the big data science conducted at CERN along with the commensurate amount of data produced and waiting for analysis.
 The main objective of the talk will be to showcase how libraries from the Scientific Python ecosystem have been used to solve a common particle physics problem.
 This problem is the discrimination of a signal of interest in immersive noise. Successfully tackling such a problem, the physicists of the ATLAS collaboration discovered the Higgs boson in 2012.
