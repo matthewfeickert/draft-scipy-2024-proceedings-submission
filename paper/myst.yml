@@ -33,7 +33,8 @@ project:
     - Scikit-HEP
   # Add the abbreviations that you use in your paper here
   abbreviations:
-    MyST: Markedly Structured Text
+    HEP: High Energy Physics
+    LHC: Large Hadron Collider
   # It is possible to explicitly ignore the `doi-exists` check for certain citation keys
   error_rules:
     - rule: doi-exists
