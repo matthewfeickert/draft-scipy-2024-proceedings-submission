@@ -12,3 +12,6 @@ The Scikit-HEP library Awkward Array [@Awkward_Array_zenodo] provides a path for
 
 With the ability to operate on HEP data structures in an array programming &mdash; or "columnar" &mdash; approach, the next step is to be able to read and write with the HEP domain specific ROOT [@Brun:1997pa] file format.
 This is accomplished with use of the `uproot` library [@Uproot_zenodo], which allows for efficient transformation of ROOT files to NumPy or Awkward arrays.
+The data is then filtered through kinematic and physics signature motivated selections using Awkward manipulations and queries to create array collections that contain the passing events.
+Through intense detector characterization and calibration efforts, the ATLAS collaboration has developed robust methods and tooling to apply systematic corrections to the data (e.g. corrections to specific calorimeter subsystems).
+Given the custom nature of the detector and correction implementations, these corrections are implemented in custom `C++` libraries in the ATLAS software framework, Athena [@Athena_zenodo].
