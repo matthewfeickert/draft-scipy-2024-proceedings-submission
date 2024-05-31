@@ -11,13 +11,6 @@ exports:
     template: eartharxiv
     output: exports/scipy_proceedings_draft.pdf
 ---
-
-## Notes
-
-* Example Jupyter notebook of simplified particle physics data analysis: [Zee_demo.ipynb](https://gitlab.cern.ch/gstark/pycolumnarprototype/-/blob/py_el_tool_test/Zee_demo.ipynb)
-* Last public talk on international conference by the speaker: [11th Edition of the Large Hadron Collider Physics Conference (22-26 May 2023): HL-LHC and Beyond Computing Challenges](https://indico.cern.ch/event/1198609/contributions/5370078/)
-* Dataset information: the until the date of the conference the ATLAS Collaboration plans to release a large amount of public dataset, so those data will be used for the talk material. If this is not achieved by the collaboration,for any reason, the talk will use already public simulated data.
-
 :::{include} introduction.md
 :::
 
@@ -32,3 +25,9 @@ exports:
 
 :::{include} acknowledgements.md
 :::
+
+## Notes
+
+* Example Jupyter notebook of simplified particle physics data analysis: [Zee_demo.ipynb](https://gitlab.cern.ch/gstark/pycolumnarprototype/-/blob/py_el_tool_test/Zee_demo.ipynb)
+* Last public talk on international conference by the speaker: [11th Edition of the Large Hadron Collider Physics Conference (22-26 May 2023): HL-LHC and Beyond Computing Challenges](https://indico.cern.ch/event/1198609/contributions/5370078/)
+* Dataset information: the until the date of the conference the ATLAS Collaboration plans to release a large amount of public dataset, so those data will be used for the talk material. If this is not achieved by the collaboration,for any reason, the talk will use already public simulated data.
