@@ -1,6 +1,8 @@
 ## Uncovering the Higgs boson
 
-_I thought we can use a simplified Higgs boson analysis as an example.
+**TODO: Add overview of an analysis the recovers the Higgs in data**
+
+_We can use a simplified Higgs boson analysis as an example.
 This can be done either by using old open data as in AGC $H \to ZZ^*$ example ([notebook](https://agc.readthedocs.io/en/latest/atlas-open-data-hzz/HZZ_analysis_pipeline.html#ATLAS-Open-Data-H\rightarrow-ZZ^\star-with-ServiceX,-coffea,-cabinetry-&-pyhf)) or by using recent PHYSLITE Open Data.
 **PHYSLITE Open Data have NOT been released by ATLAS yet.**_
 
@@ -34,7 +36,7 @@ This will look like three histograms as Matthias has showed in the [Zee_demo.ipy
 _This is a fancy term for calculating the 4-lepton invariant mass which will be used as a discriminant.
 We can briefly expand on the usage of ML techniques to calculate more convolved discriminants in complex realistic analyses._
 
-### The money plot
+### The "discovery" plot
 
 _Here we show the m(4l) distribution.
 We use `matplotlib`.

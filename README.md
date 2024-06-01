@@ -8,6 +8,8 @@ To submit to SciPy, Matthew Feickert will open a PR to the [SciPy proceedings](h
 
 ## Timeline
 
+SciPy 2024 Proceedings PR: https://github.com/scipy-conference/scipy_proceedings/pull/924
+
 | Date | Event | Passed (✅/❌) |
 | -    | :-    | -              |
 | May 31   | Deadline to submit first draft by authors | 🎯 |
