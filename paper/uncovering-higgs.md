@@ -31,6 +31,13 @@ It might only makes sense if we start from PHYSLITE data but I am not so sure...
 To simplify things we can show nominal plus and up and a down variation.
 This will look like three histograms as Matthias has showed in the [Zee_demo.ipynb](https://gitlab.cern.ch/gstark/pycolumnarprototype/-/blob/py_el_tool_test/Zee_demo.ipynb)._
 
+:::{figure} figures/Zee_mc_systematics.png
+:label: fig:Zee_mc_systematics
+
+Example of the reconstructed dilepton invariant mass distribution in simulation with the electron reconstruction and identification efficiency scale factor (SF) and corrections to the energy resolution (res) energy scale (scale) computed on-the-fly using the `nanobind` Python bindings to the ATLAS `C++` correction tools.
+The total variation in the systematic corrections is plotted as a hashed band. [@Kourlitis:2890478]
+:::
+
 ### Feature engineering
 
 _This is a fancy term for calculating the 4-lepton invariant mass which will be used as a discriminant.

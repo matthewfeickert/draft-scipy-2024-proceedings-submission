@@ -72,6 +72,7 @@ project:
         - Dask
         - Dask-awkward
         - Dask-histogram
+        - Kourlitis:2890478
   # A banner will be generated for you on publication, this is a placeholder
   banner: banner.png
   # The rest of the information shouldn't be modified
