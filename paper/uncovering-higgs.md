@@ -59,8 +59,6 @@ We can briefly expand on the usage of ML techniques to calculate more convolved 
 ### The "discovery" plot
 
 _Here we show the m(4l) distribution.
-We use `matplotlib`.
-To further advertise [Scikit-HEP](https://scikit-hep.org/) we can also introduce and use the `hist` and `mplhep` libraries._
 
 _In order to plot different physics processes we need to properly weight them.
 I don't think worths spending time on this on the text though._
@@ -70,10 +68,27 @@ _Could we do some basic statistics with `pyhf`?_
 _The point here is that signal is apparent on top of background._
 
 
-```{include} code/prefit.py
+```{include} code/prefit_plot.py
 :lang: python
-:caption: Using `coffea`, tree structured ROOT files are read with `uproot` from an efficient file cache, and the relevant branches for physics are filtered out into Awkward arrays.
+:caption: Using `mplhep`, `hist`, and `matplotlib` the post-processed histograms of the simulation and the data are visualized in advance of any statistical inference of best-fit model parameters.
 ```
+
+:::{figure} figures/prefit_plot.png
+:label: fig:prefit_plot
+
+Using `mplhep`, `hist`, and `matplotlib` the post-processed histograms of the simulation and the data are visualized in advance of any statistical inference of best-fit model parameters.
+:::
+
+```{include} code/postfit_plot.py
+:lang: python
+:caption: Using `cabinetry`, `pyhf`, and `matplotlib` the data and the post-fit model prediction are visualized.
+```
+
+:::{figure} figures/postfit_plot.png
+:label: fig:postfit_plot
+
+Using `cabinetry`, `pyhf`, and `matplotlib` the data and the post-fit model prediction are visualized.
+:::
 
 ### Scaling out
 
