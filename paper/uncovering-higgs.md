@@ -69,6 +69,12 @@ _Could we do some basic statistics with `pyhf`?_
 
 _The point here is that signal is apparent on top of background._
 
+
+```{include} code/prefit.py
+:lang: python
+:caption: Using `coffea`, tree structured ROOT files are read with `uproot` from an efficient file cache, and the relevant branches for physics are filtered out into Awkward arrays.
+```
+
 ### Scaling out
 
 _Here we can talk about how scaling using `dask` can help us reduce the time to insight.
