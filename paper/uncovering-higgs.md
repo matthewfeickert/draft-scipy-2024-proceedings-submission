@@ -20,6 +20,13 @@ _`uproot` and `awkward` usage to load particle physics data into jagged arrays_
 
 Given the size of the data, the files used in a real analysis will usually be cached at a national level "analysis facility" where the analysis code will run.
 
+<!-- https://mystmd.org/guide/directives#directive-include -->
+```{include} code/read.py
+:lang: python
+:caption: Using `coffea`, tree structured ROOT files are read with `uproot` from an efficient file cache, and the relevant branches for physics are filtered out into Awkward arrays.
+The operation is scaled out on a Dask cluster for read performance.
+```
+
 ### Cleaning and selecting data
 
 _If we start from PHYSLITE data one needs to apply some lepton quality criteria (e.g. ID, isolation, etc.).
