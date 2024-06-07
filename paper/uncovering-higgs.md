@@ -11,7 +11,8 @@ Additionally, we should talk about the backgrounds, which in this case originate
 Additionally, backgrounds could be induced by jets faking leptons, thus processes as Z+jets or $t\bar{t}$ production can contribute as well._
 
 The most famous and revolutionary discovery in particle physics this century is the discovery of the Higgs boson &mdash; the particle corresponding to the quantum field that gives mass to fundamental particles through the Brout-Englert-Higgs mechanism &mdash; by the ATLAS and CMS experimental collaborations in 2012. [@HIGG-2012-27;@CMS-HIG-12-028]
-This discovery work was done using large amounts of customized `C++` software, but in the following decade the state of the PyHEP community has advanced enough that the workflow can now be done using Python tooling.
+This discovery work was done using large amounts of customized `C++` software, but in the following decade the state of the PyHEP community has advanced enough that the workflow can now be done using community Python tooling.
+To provide an overview of the tooling and functionality, a high level summary of a simplified analysis workflow of a Higgs "decay" to two intermediate $Z$ bosons that decay to charged leptons $(\ell)$ (i.e. electrons ($e$) and muons ($\mu$)), $H \to Z Z^{*} \to 4 \ell$, on ATLAS open data is summarized in this section.
 
 ### Loading data
 
