@@ -41,11 +41,13 @@ project:
     - rule: doi-exists
       severity: ignore
       keys:
-        - Atr03
-        - terradesert
-        - jupyter
-        - sklearn1
-        - sklearn2
+        - S2I2HEPSP
+        - PyHEP
+        - nanobind
+        - ATL-SOFT-PUB-2021-001
+        - Dask
+        - Dask-awkward
+        - Dask-histogram
   # A banner will be generated for you on publication, this is a placeholder
   banner: banner.png
   # The rest of the information shouldn't be modified
