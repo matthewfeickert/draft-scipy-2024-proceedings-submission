@@ -14,11 +14,19 @@ The data is then filtered through kinematic and physics signature motivated sele
 Through intense detector characterization and calibration efforts, the ATLAS collaboration has developed robust methods and tooling to apply corrections to the data and evaluate systematic uncertainties.
 For instance, corrections to the signal collected by a specific calorimeter subsystems along with systematic uncertainties due to the imperfect knowledge of the subsystems.
 Given the custom nature of the detector and correction implementations, these corrections are implemented in custom `C++` libraries in the ATLAS software framework, Athena [@ATL-SOFT-PUB-2021-001;@Athena_zenodo].
-To expose these `C++` libraries to the Pythonic tooling layer, custom Python bindings were written using `nanobind` for high efficiency.
+To expose these `C++` libraries to the Pythonic tooling layer, custom Python bindings were written using `nanobind` for high efficiency, as seen in @fig:access_layer_diagram.
+
+:::{figure} figures/access_layer_diagram.png
+:label: fig:access_layer_diagram
+
+The data access abstract interface from the high level user facing Python API to the ATLAS Event Data Model (EDM) access library that exposes the shared ATLAS combined performance (CP) tools for reconstruction, identification, and measurement of physics objects.
+The interface takes advantage of `nanobind`'s efficient bindings and zero-copy exchange protocols to achieve viable performance. [@Kourlitis:2890478]
+:::
 
 To contend with the extreme data volume, efficient distributed computing is an essential requirement.
 Given the success of Dask [@Dask] in the Scientific Python ecosystem, and its ability to be deployed across both traditional batch systems and cloud based infrastructure with Kubernetes, the Scikit-HEP ecosystem has built extensions to Dask that allow for native Dask collections of Awkward arrays [@Dask-awkward] and computing multidimensional `boost-histogram` objects [@Boost-histogram_zenodo] with Dask collections [@Dask-histogram].
 Using Dask and these extensions, the data selection and systematic correction workflow is able to be horizontally scaled out across ATLAS collaboration compute resources to provide the data throughput necessary to make analysis feasible.
+This is often achieved through use of the high level `coffea` columnar analysis framework [@coffea_zenodo] which was designed to integrate with Dask and these HEP specific Dask extensions.
 
 The resulting data objects that are returned to analysts are histograms of physics quantity distributions &mdash; such as the reconstructed invariant-mass of a collection of particles or particle momentum.
 Using the `hist` library [@hist_zenodo] for higher level data exploration and manipulation, physicists are then able to efficiently further manipulate the data distributions using tooling from the broader Scientific Python ecosystem and create domain-centric visualizations using the `mplhep` [@mplhep_zenodo] extension of Matplotlib [@matplotlib].

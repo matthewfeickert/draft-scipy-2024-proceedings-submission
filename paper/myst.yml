@@ -57,8 +57,10 @@ project:
     - Scikit-HEP
   # Add the abbreviations that you use in your paper here
   abbreviations:
-    IRIS-HEP: Institute for Research and Innovation in Software for High Energy Physics
+    CP: Combined Performance
+    EDM: Event Data Model
     HEP: High Energy Physics
+    IRIS-HEP: Institute for Research and Innovation in Software for High Energy Physics
     LHC: Large Hadron Collider
   # It is possible to explicitly ignore the `doi-exists` check for certain citation keys
   error_rules:
@@ -72,6 +74,7 @@ project:
         - Dask
         - Dask-awkward
         - Dask-histogram
+        - Kourlitis:2890478
   # A banner will be generated for you on publication, this is a placeholder
   banner: banner.png
   # The rest of the information shouldn't be modified
