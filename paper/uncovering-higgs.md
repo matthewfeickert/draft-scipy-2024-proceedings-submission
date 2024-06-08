@@ -19,6 +19,7 @@ To provide an overview of the tooling and functionality, a high level summary of
 _`uproot` and `awkward` usage to load particle physics data into jagged arrays_
 
 Given the size of the data, the files used in a real analysis will usually be cached at a national level "analysis facility" where the analysis code will run.
+Using `coffea`, `uproot`, and Dask, these files can then be efficiently read and the tree structure of the data can populate Awkward arrays.
 
 <!-- https://mystmd.org/guide/directives#directive-include -->
 ```{include} code/read.py
@@ -33,6 +34,18 @@ _If we start from PHYSLITE data one needs to apply some lepton quality criteria 
 AGC data will be probably cleaned already but we can still describe.
 Data selection refers to something like 4 leptons that have the same flavour in pairs and each pair has sum of charge 0.
 This selection will reflect the decay channel described above._
+
+Once the data is in Awkward arrays, additional selections need to be applied before it can be analyzed.
+In this particular example, the simulation events need to be normalized to the amount of events in data.
+Event selections that correspond to the physics quantities of interest also need to be enforced.
+The final event topology of interest for the physics decay structure will have four charged leptons grouped in two opposite flavor lepton pairs (so that the total charge is zero, as the Higgs and the $Z$-bosons are electrically neutral).
+
+With these selections
+
+```{include} code/coffea.py
+:lang: python
+:caption: Using `coffea`
+```
 
 ### Measurement uncertainties
 

@@ -1,4 +1,4 @@
-from coffea.nanoevents import PHYSLITESchema, NanoEventsFactory
+from coffea.nanoevents import NanoEventsFactory, PHYSLITESchema
 
 
 def get_uris_from_cache(): ...

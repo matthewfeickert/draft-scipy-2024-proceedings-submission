@@ -1,5 +1,5 @@
-import mplhep
 import hist
+import mplhep
 
 mplhep.histplot(
     all_histograms["data"], histtype="errorbar", color="black", label="Data"

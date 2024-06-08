@@ -1,5 +1,5 @@
-import numpy as np
 import cabinetry
+import numpy as np
 
 # create post-fit model prediction
 postfit_model = cabinetry.model_utils.prediction(model, fit_results=fit_results)
