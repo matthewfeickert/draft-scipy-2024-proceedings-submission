@@ -11,13 +11,13 @@ To submit to SciPy, Matthew Feickert will open a PR to the [SciPy proceedings](h
 SciPy 2024 Proceedings PR: https://github.com/scipy-conference/scipy_proceedings/pull/924
 
 | Date | Event | Passed (✅/❌) |
-| -    | :-    | -              |
-| June 7   | Deadline to submit first draft by authors | 🎯 |
-| June 7   | Open Review Period begins                 |  |
-| June 21  | Initial complete review                   |  |
-| July 26  | Final review deadline                     |  |
-| July 31  | Final author revision deadline            |  |
-| August 9 | Final reviewer decision deadline          |  |
+| -    | :-    | :-:            |
+| June 7    | Deadline to submit first draft by authors | ✅ |
+| June 8    | Open Review Period begins                 | ✅ |
+| June 29   | Initial complete review                   |   |
+| August 2  | Final review deadline                     |   |
+| August 7  | Final author revision deadline            |   |
+| August 16 | Final reviewer decision deadline          |   |
 
 ## [General Information and Guidelines for Authors](https://github.com/scipy-conference/scipy_proceedings/tree/2024?tab=readme-ov-file#general-information-and-guidelines-for-authors)
 
