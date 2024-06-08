@@ -24,7 +24,7 @@ def lepton_filter(lep_charge, lep_type):
     )
     return ak.all([sum_lep_charge == 0, good_lep_type], axis=0)
 
-
+# VK: I think we can skip this. Too much detail and you don't need a processor anymore in coffea.
 class HZZAnalysis(processor.ProcessorABC):
     """The coffea processor used in this analysis."""
 
