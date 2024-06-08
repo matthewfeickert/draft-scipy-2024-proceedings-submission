@@ -63,6 +63,11 @@ One of the most expensive computations that happens during the event selections 
 This in practice requires applying complex, experiment specific corrections to each event, using algorithms implemented in `C++`.
 Historically these tools were implemented for an event loop processing paradigm, but with recent tooling additions, as shown in @fig:access_layer_diagram, efficient on-the-fly systematic corrections can be computed for array programming paradigms.
 
+```{include} code/corrections.py
+:lang: python
+:caption: Simplified example of what the Python API for a systematic correction tool with a columnar implementation looks like.
+```
+
 :::{figure} figures/Zee_mc_systematics.png
 :label: fig:Zee_mc_systematics
 
