@@ -40,12 +40,14 @@ In this particular example, the simulation events need to be normalized to the a
 Event selections that correspond to the physics quantities of interest also need to be enforced.
 The final event topology of interest for the physics decay structure will have four charged leptons grouped in two opposite flavor lepton pairs (so that the total charge is zero, as the Higgs and the $Z$-bosons are electrically neutral).
 
-With these selections
+These selection can then be implemented in an analysis specific `coffea` processor, and then the processor can be executed used a Dask executor to horizontally scale out the analysis selection across the available compute.
 
 ```{include} code/coffea.py
 :lang: python
-:caption: Using `coffea`
+:caption: A `coffea` processor designed to make physics motivated event selections to create accumulators of the 4-lepton invariant mass.
 ```
+
+The example shown uses a simple selection process, but the methods used can use complex feature engineering that involve machine learning methods to calculate optimal discriminants.
 
 ### Measurement uncertainties
 
@@ -64,10 +66,10 @@ Example of the reconstructed dilepton invariant mass distribution in simulation 
 The total variation in the systematic corrections is plotted as a hashed band. [@Kourlitis:2890478]
 :::
 
-### Feature engineering
+<!-- ### Feature engineering
 
 _This is a fancy term for calculating the 4-lepton invariant mass which will be used as a discriminant.
-We can briefly expand on the usage of ML techniques to calculate more convolved discriminants in complex realistic analyses._
+We can briefly expand on the usage of ML techniques to calculate more convolved discriminants in complex realistic analyses._ -->
 
 ### The "discovery" plot
 
