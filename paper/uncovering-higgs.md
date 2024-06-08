@@ -59,9 +59,12 @@ It might only makes sense if we start from PHYSLITE data but I am not so sure...
 To simplify things we can show nominal plus and up and a down variation.
 This will look like three histograms as Matthias has showed in the [Zee_demo.ipynb](https://gitlab.cern.ch/gstark/pycolumnarprototype/-/blob/py_el_tool_test/Zee_demo.ipynb)._ -->
 
-One of the most expensive computations that happens during the event selections is the computation of systematic variations of the events to accommodate for imperfect knowledge of the detector systems.
+One of the most expensive operations that happens during the event selections is the computation of systematic variations of the events to accommodate for imperfect knowledge of the detector systems.
 This in practice requires applying complex, experiment specific corrections to each event, using algorithms implemented in `C++`.
 Historically these tools were implemented for an event loop processing paradigm, but with recent tooling additions, as shown in @fig:access_layer_diagram, efficient on-the-fly systematic corrections can be computed for array programming paradigms.
+
+The following provides an example of high level Python APIs that provide handles to these tools to use in the workflows described so far.
+These tools are efficient enough to be able to apply multiple systematic variations in analysis workflows, as seen in @fig:Zee_mc_systematics.
 
 ```{include} code/corrections.py
 :lang: python
@@ -82,14 +85,16 @@ We can briefly expand on the usage of ML techniques to calculate more convolved 
 
 ### The "discovery" plot
 
-_Here we show the m(4l) distribution.
+<!-- _Here we show the m(4l) distribution.
 
 _In order to plot different physics processes we need to properly weight them.
 I don't think worths spending time on this on the text though._
 
 _Could we do some basic statistics with `pyhf`?_
 
-_The point here is that signal is apparent on top of background._
+_The point here is that signal is apparent on top of background._ -->
+
+_Adding this now_
 
 
 ```{include} code/prefit_plot.py
@@ -114,8 +119,10 @@ Using `mplhep`, `hist`, and `matplotlib` the post-processed histograms of the si
 Using `cabinetry`, `pyhf`, and `matplotlib` the data and the post-fit model prediction are visualized.
 :::
 
-### Scaling out
+<!-- ### Scaling out
 
 _Here we can talk about how scaling using `dask` can help us reduce the time to insight.
 I think we can use some outcomes of the recent 200Gbps challenge if we cannot run this ourselves.
-Although we could get something to run on from Alex H._
+Although we could get something to run on from Alex H._ -->
+
+<!-- Cut this now and come back to it later. -->
