@@ -1,6 +1,6 @@
 ## Uncovering the Higgs boson
 
-**TODO: Add overview of an analysis the recovers the Higgs in data**
+<!-- **TODO: Add overview of an analysis the recovers the Higgs in data**
 
 _We can use a simplified Higgs boson analysis as an example.
 This can be done either by using old open data as in AGC $H \to ZZ^*$ example ([notebook](https://agc.readthedocs.io/en/latest/atlas-open-data-hzz/HZZ_analysis_pipeline.html#ATLAS-Open-Data-H\rightarrow-ZZ^\star-with-ServiceX,-coffea,-cabinetry-&-pyhf)) or by using recent PHYSLITE Open Data.
@@ -8,7 +8,7 @@ This can be done either by using old open data as in AGC $H \to ZZ^*$ example ([
 
 _We should pedagogically introduce the Higgs boson and its decay to Z bosons and eventually leptons.
 Additionally, we should talk about the backgrounds, which in this case originate from the simultaneous production of two Z boson that each one decays to a pair of same-flavour opposite-sign leptons.
-Additionally, backgrounds could be induced by jets faking leptons, thus processes as Z+jets or $t\bar{t}$ production can contribute as well._
+Additionally, backgrounds could be induced by jets faking leptons, thus processes as Z+jets or $t\bar{t}$ production can contribute as well._ -->
 
 The most famous and revolutionary discovery in particle physics this century is the discovery of the Higgs boson &mdash; the particle corresponding to the quantum field that gives mass to fundamental particles through the Brout-Englert-Higgs mechanism &mdash; by the ATLAS and CMS experimental collaborations in 2012. [@HIGG-2012-27;@CMS-HIG-12-028]
 This discovery work was done using large amounts of customized `C++` software, but in the following decade the state of the PyHEP community has advanced enough that the workflow can now be done using community Python tooling.
@@ -16,7 +16,7 @@ To provide an overview of the tooling and functionality, a high level summary of
 
 ### Loading data
 
-_`uproot` and `awkward` usage to load particle physics data into jagged arrays_
+<!-- _`uproot` and `awkward` usage to load particle physics data into jagged arrays_ -->
 
 Given the size of the data, the files used in a real analysis will usually be cached at a national level "analysis facility" where the analysis code will run.
 Using `coffea`, `uproot`, and Dask, these files can then be efficiently read and the tree structure of the data can populate Awkward arrays.
@@ -30,10 +30,10 @@ The operation is scaled out on a Dask cluster for read performance.
 
 ### Cleaning and selecting data
 
-_If we start from PHYSLITE data one needs to apply some lepton quality criteria (e.g. ID, isolation, etc.).
+<!-- _If we start from PHYSLITE data one needs to apply some lepton quality criteria (e.g. ID, isolation, etc.).
 AGC data will be probably cleaned already but we can still describe.
 Data selection refers to something like 4 leptons that have the same flavour in pairs and each pair has sum of charge 0.
-This selection will reflect the decay channel described above._
+This selection will reflect the decay channel described above._ -->
 
 Once the data is in Awkward arrays, additional selections need to be applied before it can be analyzed.
 In this particular example, the simulation events need to be normalized to the amount of events in data.
@@ -51,13 +51,17 @@ The example shown uses a simple selection process, but the methods used can use 
 
 ### Measurement uncertainties
 
-_Here we can introduce the notion of experimental systematic uncertainties to account for imperfect knowledge of the ATLAS detector.
+<!-- _Here we can introduce the notion of experimental systematic uncertainties to account for imperfect knowledge of the ATLAS detector.
 This is the time to talk about how we used `nanobind` to port legacy C++ tools in Python._
 
 _We need to think how to demonstrate that.
 It might only makes sense if we start from PHYSLITE data but I am not so sure...
 To simplify things we can show nominal plus and up and a down variation.
-This will look like three histograms as Matthias has showed in the [Zee_demo.ipynb](https://gitlab.cern.ch/gstark/pycolumnarprototype/-/blob/py_el_tool_test/Zee_demo.ipynb)._
+This will look like three histograms as Matthias has showed in the [Zee_demo.ipynb](https://gitlab.cern.ch/gstark/pycolumnarprototype/-/blob/py_el_tool_test/Zee_demo.ipynb)._ -->
+
+One of the most expensive computations that happens during the event selections is the computation of systematic variations of the events to accommodate for imperfect knowledge of the detector systems.
+This in practice requires applying complex, experiment specific corrections to each event, using algorithms implemented in `C++`.
+Historically these tools were implemented for an event loop processing paradigm, but with recent tooling additions, as shown in @fig:access_layer_diagram, efficient on-the-fly systematic corrections can be computed for array programming paradigms.
 
 :::{figure} figures/Zee_mc_systematics.png
 :label: fig:Zee_mc_systematics
