@@ -1,6 +1,15 @@
 import cabinetry
 import numpy as np
 
+config = cabinetry.configuration.load("config.yml")
+
+cabinetry.templates.collect(config)
+cabinetry.templates.postprocess(config)  # optional post-processing (e.g. smoothing)
+workspace = cabinetry.workspace.build(config)
+
+model, data = cabinetry.model_utils.model_and_data(workspace)
+fit_results = cabinetry.fit.fit(model, data)
+
 # create post-fit model prediction
 postfit_model = cabinetry.model_utils.prediction(model, fit_results=fit_results)
 

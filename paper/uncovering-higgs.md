@@ -108,7 +108,7 @@ _Could we do some basic statistics with `pyhf`?_
 
 _The point here is that signal is apparent on top of background._ -->
 
-_Adding this now_
+After running the `coffea` processors, the resulting data from the selections is accumulated into `boost-histogram` objects, as seen visualized in @fig:prefit_plot.
 
 
 ```{include} code/prefit_plot.py
@@ -121,6 +121,11 @@ _Adding this now_
 
 Using `mplhep`, `hist`, and `matplotlib` the post-processed histograms of the simulation and the data are visualized in advance of any statistical inference of best-fit model parameters.
 :::
+
+These histograms are then serialized into files with `uproot` and used by the statistical modeling and inference libraries `pyhf` [@pyhf_zenodo;@pyhf_joss] and `cabinetry` [@cabinetry_zenodo] to build binned statistical models and efficiently fit the models to the observed data using vectorized computations and the optimization library `iminuit` [@iminuit_zenodo] for full uncertainties on all model parameters.
+The resulting best-fit model parameters &mdash; such as the scale factor on the signal component of the model corresponding to the normalization on the Higgs contributions &mdash; are visualized in @fig:postfit_plot, where good agreement between the model predictions and the data is observed.
+The signal component, clearly visible above the additional "background" components of the model, are Higgs boson events, with an observed count in agreement with theoretical expectations.
+_TODO: Quantify results._
 
 ```{include} code/postfit_plot.py
 :lang: python
