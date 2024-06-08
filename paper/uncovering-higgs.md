@@ -8,7 +8,7 @@ This can be done either by using old open data as in AGC $H \to ZZ^*$ example ([
 
 _We should pedagogically introduce the Higgs boson and its decay to Z bosons and eventually leptons.
 Additionally, we should talk about the backgrounds, which in this case originate from the simultaneous production of two Z boson that each one decays to a pair of same-flavour opposite-sign leptons.
-Additionally, backgrounds could be induced by jets faking leptons, thus processes as Z+jets or $t\bar{t}$ production can contribute as well._ 
+Additionally, backgrounds could be induced by jets faking leptons, thus processes as Z+jets or $t\bar{t}$ production can contribute as well._
 
 We need to stick only to the Z->ee decay if we want to use the python-ported EGamma CP tools.-->
 
@@ -38,7 +38,7 @@ Data selection refers to something like 4 leptons that have the same flavour in 
 This selection will reflect the decay channel described above._ -->
 
 Once the data is in Awkward arrays, additional selections need to be applied before it can be analyzed.
-Only physics object of adequate quality are kept for further analysis and those should reconstruct the topology of interest. 
+Only physics object of adequate quality are kept for further analysis and those should reconstruct the topology of interest.
 In this particular case, due to the decay of the Higgs boson to two leptons, the data selected contain four charged leptons grouped in two opposite flavor lepton pairs (so that the total charge is zero, as the Higgs and the $Z$-bosons are electrically neutral).
 Additionally, in order to compare various kinds of simulated data, the events need to be normalized/weighted given their relative appearance in reality and the amount of actual data collected by the experiment.
 
@@ -52,7 +52,7 @@ These selection and weighting can then be implemented in an analysis specific `c
 
 ### Feature engineering: The invariant mass
 
-In order to discriminate the events of interest, i.e. candidates of the Higss boson decay, from the vast background which has the same experimental signature, a discriminating feature is constructed. 
+In order to discriminate the events of interest, i.e. candidates of the Higss boson decay, from the vast background which has the same experimental signature, a discriminating feature is constructed.
 The example shown uses a simple, physics-inspired discriminant the "invariant mass" but the methods used can use complex feature engineering that involve machine learning methods to calculate more efficient discriminants.
 The invariant mass is the mass of a system that remains constant regardless of the system's motion or the reference frame in which it is measured. Invariant mass is derived from the energy and momentum of a system of particles and is a fundamental property of the system:
 ```{math}
