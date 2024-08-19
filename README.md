@@ -12,12 +12,13 @@ SciPy 2024 Proceedings PR: https://github.com/scipy-conference/scipy_proceedings
 
 | Date | Event | Passed (✅/❌) |
 | -    | :-    | :-:            |
-| June 7    | Deadline to submit first draft by authors | ✅ |
-| June 8    | Open Review Period begins                 | ✅ |
-| June 29   | Initial complete review                   |   |
-| August 2  | Final review deadline                     |   |
-| August 7  | Final author revision deadline            |   |
-| August 16 | Final reviewer decision deadline          |   |
+| June 7       | Deadline to submit first draft by authors | ✅ |
+| June 8       | Open Review Period begins                 | ✅ |
+| July 3       | Initial complete review                   | ✅ |
+| August 19    | Final review deadline                     | ✅ |
+| September 2  | Final author revision deadline            |    |
+| September 2  | Open Review Period ends                   |    |
+| September 9  | Final reviewer decision deadline          |    |
 
 ## [General Information and Guidelines for Authors](https://github.com/scipy-conference/scipy_proceedings/tree/2024?tab=readme-ov-file#general-information-and-guidelines-for-authors)
 
