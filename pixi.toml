@@ -23,12 +23,12 @@ myst build --pdf
 """
 
 [dependencies]
-mystmd = "==1.2.5"
+mystmd = "==1.3.4"
 nodejs = "==20.12.2"
 libwebp = "==1.4.0"
 
 [feature.dev.dependencies]
-pre-commit = "==3.7.1"
+pre-commit = "==3.8.0"
 
 [environments]
 dev = ["dev"]
