@@ -30,5 +30,8 @@ libwebp = "==1.4.0"
 [feature.dev.dependencies]
 pre-commit = "==3.8.0"
 
+[feature.dev.tasks]
+pre-commit = "pre-commit run --all-files"
+
 [environments]
 dev = ["dev"]
