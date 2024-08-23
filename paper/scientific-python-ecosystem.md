@@ -12,7 +12,7 @@ With the ability to operate on HEP data structures in an array programming &mdas
 This is accomplished with use of the `uproot` library [@Uproot_zenodo], which allows for efficient transformation of ROOT data to NumPy or Awkward arrays.
 The data is then filtered through kinematic and physics signature motivated selections using Awkward manipulations and queries to create array collections that contain the passing events.
 Through intense detector characterization and calibration efforts, the ATLAS collaboration has developed robust methods and tooling to apply corrections to the data and evaluate systematic uncertainties.
-For instance, corrections to the signal collected by a specific calorimeter subsystems along with systematic uncertainties due to the imperfect knowledge of the subsystems.
+For instance, corrections to the signal collected by a specific calorimeter subsystem along with systematic uncertainties due to the imperfect knowledge of the subsystem.
 Given the custom nature of the detector and correction implementations, these corrections are implemented in custom `C++` libraries in the ATLAS software framework, Athena [@ATL-SOFT-PUB-2021-001;@Athena_zenodo].
 To expose these `C++` libraries to the Pythonic tooling layer, custom Python bindings were written using `nanobind` for high efficiency, as seen in @fig:access_layer_diagram.
 
