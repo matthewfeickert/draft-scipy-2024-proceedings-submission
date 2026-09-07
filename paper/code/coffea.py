@@ -69,7 +69,7 @@ class HZZAnalysis(processor.ProcessorABC):
             bin_edge_low,
             bin_edge_high,
             name="mllll",
-            label="$\mathrm{m_{4l}}$ [GeV]",
+            label=r"$\mathrm{m_{4l}}$ [GeV]",
         ).Weight()  # using weighted storage here for plotting later, but not needed
 
         # three histogram axes for MC: m4l, category, and variation (nominal and
@@ -80,7 +80,7 @@ class HZZAnalysis(processor.ProcessorABC):
                 bin_edge_low,
                 bin_edge_high,
                 name="mllll",
-                label="$\mathrm{m_{4l}}$ [GeV]",
+                label=r"$\mathrm{m_{4l}}$ [GeV]",
             )
             .StrCat([k for k in fileset.keys() if k != "Data"], name="dataset")
             .StrCat(
