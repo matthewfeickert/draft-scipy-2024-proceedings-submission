@@ -1,5 +1,4 @@
 import awkward as ak
-
 from atlascp import EgammaTools  # ATLAS CP tool Python nanobind bindings
 
 
